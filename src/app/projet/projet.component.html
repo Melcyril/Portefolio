@@ -1,0 +1,18 @@
+<hr class="hr-line"  id="projet">
+   <section class="projet" #madivRef>
+        <h2>Mes projets réalisés : </h2>
+        <div class="mesprojets">
+        <article class="monprojet" *ngFor="let projet of mesProjets">
+            <h3>{{ projet.titre}}</h3>
+            <img class="imgProjet" src={{projet.image}}/>
+            <p>Technogie utilisée :</p>
+            <p>{{projet.technologie}}</p>
+            <p>Description :</p>
+            <p>{{projet.description}}</p>
+            <p *ngIf="projet.lien !== ''">{{projet.lien}}</p>
+        </article>
+
+    </div>
+    </section>
+
+    <hr class="hr-line" id="interet">
