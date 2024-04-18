@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -12,6 +12,8 @@ import { InteretComponent } from './interet/interet.component';
 import { MenuComponent } from './menu/menu.component';
 import { GestionComponent } from './gestion/gestion.component';
 import { AnimationTreeComponent } from './animation-tree/animation-tree.component';
+import { FullstackComponent } from './fullstack/fullstack.component';
+
 
 @NgModule({
   declarations: [
@@ -24,9 +26,11 @@ import { AnimationTreeComponent } from './animation-tree/animation-tree.componen
     InteretComponent,
     MenuComponent,
     GestionComponent,
-    AnimationTreeComponent
+    AnimationTreeComponent,
+    FullstackComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],

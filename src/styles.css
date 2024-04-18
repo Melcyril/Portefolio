@@ -90,7 +90,7 @@ a:focus {
 /*--------------------------------------------TREE---------------------------------------------*/
 .tree{
     max-width: 100%;
-    height: 500vh;
+    height: 700vh;
     display: block;
     margin: 0 auto;
 }
@@ -161,18 +161,24 @@ a:focus {
       #about{
         top:0;
       }
+      #fullstack{
+        top: 100vh;
+      }
+      #skills{
+        top:211vh;
+      }
       #projet{
-        top:205vh;
+        top:345vh;
       }
       #interet{
-        top:330vh;
+        top:465vh;
       }
       #gestion{
         top:400vh;
       }
       #contact{
 
-        top:450vh;
+        top:565vh;
       }
     section {
         position: absolute;
@@ -203,10 +209,16 @@ a:focus {
     margin-right: 10%;
     border-radius: 0px;
  }
+ form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    padding-right: 25%;
+ }
  /*------------------------------------placement COMPOSANTS---------------------------------------------*/
 .gestion,.fullstack,.about,.skills,.projet,.contact,.interet{
     position: absolute;
-    top:100vh;
+    top:30vh;
     transform: translate(-50%, -50%); /* Centre verticalement et horizontalement */
     font-size: 1rem;
     color: rgba(245, 245, 245, 0.719);
@@ -225,13 +237,25 @@ a:focus {
     opacity: 1;
     transition: opacity 0.5s;
 }*/
+.about{
+    top:55vh;
+    width: 75%;
+}
+.about p{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: larger;
+    font-style: italic;
+    color: #b8b8b8;
+}
+
 .gestion{
     top: 430vh;
     font-size: 3rem;
 
 }
 .fullstack{
-    top:55vh;
+    top:150vh;
     text-align: center;
     width: 100%;
 
@@ -254,11 +278,11 @@ a:focus {
     letter-spacing: 2px;
 }
 .skills {
-    top: 155vh;
+    top: 260vh;
 
 }
 .projet{
-    top: 265vh;
+    top: 400vh;
     height: auto;
 }
 .mesprojets,.fullstack{
@@ -277,10 +301,10 @@ a:focus {
     height: auto;
 }
 .interet{
-    top:385vh;
+    top:500vh;
 }
 .contact{
-    top:489vh;
+    top:600vh;
     height: 25vh;
     width: 100%;
     border-radius: 0;

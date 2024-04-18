@@ -14,9 +14,5 @@ import { GlobalService } from './global.service';
 })
 export class AppComponent{
   constructor(private globalService: GlobalService) {}
-  title = 'app-Portefolio';
-  @HostListener('window:hover', [])
-  onScroll(): void {
-      console.log('Je scroll !');
-  }
+
 }

@@ -26,7 +26,7 @@ export class AnimationTreeComponent {
 
   ngOnInit(): void {
 
-    this.animationHeight = window.innerHeight*5
+    this.animationHeight = window.innerHeight*7
 
 
     this.initScene();
