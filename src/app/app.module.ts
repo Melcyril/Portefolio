@@ -13,7 +13,8 @@ import { MenuComponent } from './menu/menu.component';
 import { GestionComponent } from './gestion/gestion.component';
 import { AnimationTreeComponent } from './animation-tree/animation-tree.component';
 import { FullstackComponent } from './fullstack/fullstack.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimationCaractereComponent } from './animation-caractere/animation-caractere.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +28,11 @@ import { FullstackComponent } from './fullstack/fullstack.component';
     MenuComponent,
     GestionComponent,
     AnimationTreeComponent,
-    FullstackComponent
+    FullstackComponent,
+    AnimationCaractereComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     FormsModule,
     BrowserModule,
     AppRoutingModule

@@ -1,6 +1,16 @@
+<div class="backgroundcolor">
 
-            <app-about></app-about>
-            <app-fullstack></app-fullstack>
+              <div class="animation">
+                     <h1 class="titreFull">DEVELOPPEUR FULLSTACK</h1>
+              </div>
+    
+</div>
+            <app-about [@fadeInOut]="showDiv ? 'in' : 'out'" *ngIf="showDiv"></app-about>
+            <app-fullstack [@fadeInOut]="showDiv ? 'in' : 'out'" *ngIf="!showDiv"></app-fullstack>
+            <label class="switch">
+              <input type="checkbox" (click)="onToggle()">
+              <span class="slider round"></span>
+            </label>
             
 
             <app-skills></app-skills>
@@ -10,7 +20,7 @@
             <app-interet></app-interet>
      <!--
             <app-gestion></app-gestion> -->
-
+<app-animation-caractere></app-animation-caractere>
             <app-contact></app-contact> 
         
 

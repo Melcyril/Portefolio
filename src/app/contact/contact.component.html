@@ -4,24 +4,22 @@
         <h2>Me contacter : </h2>
         <!-- contact.component.html -->
 <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" [(ngModel)]='nom' minlength="1" maxlength="50" required>
+
+    <input type="text" id="nom" name="nom" [(ngModel)]='nom' minlength="1" maxlength="50" placeholder="Nom" required>
+
+    <input type="text" id="prenom" name="prenom" [(ngModel)]="prenom" minlength="1" maxlength="50"  placeholder="Prénom" required>
   
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" name="prenom" [(ngModel)]="prenom" minlength="1" maxlength="50" required>
-  
-    <label for="email">Adresse e-mail :</label>
-    <input type="email" id="email" name="email" [(ngModel)]="email" minlength="6" maxlength="254" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+
+    <input type="email" id="email" name="email" [(ngModel)]="email"  minlength="6" maxlength="254" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
     
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" [(ngModel)]="message" rows="10" cols="50" minlength="2" maxlength="4000" required></textarea>
+
+    <textarea id="message" name="message" [(ngModel)]="message" rows="10" cols="50" minlength="2" maxlength="4000"  placeholder="Message" required></textarea>
   
     <button type="submit" [disabled]="contactForm.invalid">Valider</button>
+
   </form>
   <p *ngIf="messageSent">Message envoyé</p>
-  <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
-    <p>Veuillez saisir un email valide !</p>
-  </div>
+
 
         <i class="fab fa-linkedin"></i>
         <!--

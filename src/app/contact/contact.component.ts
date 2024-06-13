@@ -3,6 +3,7 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { environment } from "../../environments/environnement"
 import { NgForm } from '@angular/forms';
 
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -15,9 +16,11 @@ export class ContactComponent {
   prenom: string =""
   email: string =""
   message: string =""
+  
 
 
   onSubmit(contactForm: NgForm) {
+    if(contactForm.valid){
     // Traitez les données ici (par exemple, envoyez-les par e-mail)
     console.log('Données soumises :', this.nom, this.prenom, this.email, this.message);
     
@@ -37,5 +40,8 @@ export class ContactComponent {
     }, (error) => {
         console.log(error.text);
     });
+  }else{
+    console.log('Le formulaire est invalide.');
+  }
   }
 }
