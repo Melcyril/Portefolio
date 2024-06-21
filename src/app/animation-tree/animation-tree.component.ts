@@ -60,10 +60,10 @@ export class AnimationTreeComponent {
   private createBoule(){
 
         //Loading CircleTexture(boule1.png->boule blanche fond transparent)
-        const circleTexture=this.textureLoader.load("../assets/boule1.png")
+        const circleTexture=this.textureLoader.load("assets/boule1.png")
 
         //Loading alphaMap=boule2.png->boule blanche fond noire
-        const alphaMap=this.textureLoader.load("../assets/boule2.png")
+        const alphaMap=this.textureLoader.load("assets/boule2.png")
     
         //nbre de boule souhaité, distance d'affichage, horloge
         const count=70
