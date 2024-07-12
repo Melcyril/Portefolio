@@ -45,12 +45,16 @@ export class ProjetComponent implements OnInit {
 ngOnInit(): void {
     
     console.table(this.mesProjets)
+    
 }
 
   afficherDetails(projet: Projet) {
   
     if(this.indexOuvert!=-1){
       this.mesProjets[this.indexOuvert].detailsVisible=false
+    }
+    for(let i=1;this.mesProjets.length;i++){
+      this.mesProjets[i].detailsVisible=false
     }
     this.indexOuvert=projet.id
     projet.detailsVisible = true;
