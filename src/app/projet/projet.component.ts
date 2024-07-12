@@ -63,7 +63,9 @@ ngOnInit(): void {
 
   fermerDetails(projet: Projet) {
     this.tremble = false;
-    projet.detailsVisible = false;
+    for(let i=1;this.mesProjets.length;i++){
+      this.mesProjets[i].detailsVisible=false
+    }
     const scrollProjet=document.getElementById('projet')
     if(scrollProjet)
     scrollProjet.scrollIntoView({ behavior: 'smooth' });
