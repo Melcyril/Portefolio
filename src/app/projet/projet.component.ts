@@ -48,6 +48,9 @@ ngOnInit(): void {
 }
 
   afficherDetails(projet: Projet) {
+  
+    const suppDiv=this.el.nativeElement.querySelector('.details-projet')
+    this.renderer2.removeChild(this.el.nativeElement,suppDiv);
     this.indexOuvert=projet.id
     this.mesProjets[this.indexOuvert].detailsVisible=true
     console.log(projet.id+"-id-")
