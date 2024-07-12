@@ -50,10 +50,13 @@ ngOnInit(): void {
   afficherDetails(projet: Projet) {
 
     this.indexOuvert=projet.id
-    this.mesProjets[this.indexOuvert].detailsVisible=true
-    this.mesProjets[this.indexOuvert+1].detailsVisible=false
-    this.mesProjets[this.indexOuvert-1].detailsVisible=false
 
+    for(let i=0;i<this.mesProjets.length;i++){
+      this.mesProjets[i].detailsVisible=false
+      if(i==this.indexOuvert){
+        this.mesProjets[i].detailsVisible=true
+      }
+    }
     console.log(projet.id+"-id-")
   }
 
