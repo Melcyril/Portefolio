@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { PROJETS } from '../../shared/projet-mock'; 
 import {Projet} from '../../shared/projet';
 import { count } from 'rxjs';
@@ -24,7 +24,7 @@ import { trigger, state, style, animate, transition, group, query } from '@angul
   ]
 })
 export class ProjetComponent implements OnInit {
-
+  constructor(private renderer2: Renderer2, private el: ElementRef) {}
 
   mesProjets:Projet[] = PROJETS;
   startIndex = 4;
@@ -59,9 +59,11 @@ ngOnInit(): void {
 
   fermerDetails(projet: Projet) {
     this.tremble = false;
-    for( let i=0;i<this.mesProjets.length;i++){
+    const suppDiv=this.el.nativeElement.querySelector('.details-projet')
+    this.renderer2.removeChild(this.el.nativeElement,suppDiv);
+    /*for( let i=0;i<this.mesProjets.length;i++){
       this.mesProjets[i].detailsVisible=false
-    }
+    }*/
   
     //projet.detailsVisible = false;
     const scrollProjet=document.getElementById('projet')
