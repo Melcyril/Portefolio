@@ -49,9 +49,8 @@ ngOnInit(): void {
 
   afficherDetails(projet: Projet) {
   
-    if(this.indexOuvert!=-1){
-      this.mesProjets[this.indexOuvert].detailsVisible=false
-    }
+    const suppDiv=this.el.nativeElement.querySelector('.details-projet')
+    this.renderer2.removeChild(this.el.nativeElement,suppDiv);
     this.indexOuvert=projet.id
     projet.detailsVisible = true;
     console.log(projet.id+"-id-")
