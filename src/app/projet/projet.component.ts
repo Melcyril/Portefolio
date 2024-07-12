@@ -61,9 +61,9 @@ ngOnInit(): void {
     this.tremble = false;
     const suppDiv=this.el.nativeElement.querySelector('.details-projet')
     this.renderer2.removeChild(this.el.nativeElement,suppDiv);
-    /*for( let i=0;i<this.mesProjets.length;i++){
+    for( let i=0;i<this.mesProjets.length;i++){
       this.mesProjets[i].detailsVisible=false
-    }*/
+    }
   
     //projet.detailsVisible = false;
     const scrollProjet=document.getElementById('projet')
