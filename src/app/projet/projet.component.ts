@@ -54,6 +54,7 @@ ngOnInit(): void {
     for(let i=0;i<this.mesProjets.length;i++){
       this.mesProjets[i].detailsVisible=false
       if(i==this.indexOuvert){
+        projet.detailsVisible=false
         this.mesProjets[i].detailsVisible=true
       }
     }
