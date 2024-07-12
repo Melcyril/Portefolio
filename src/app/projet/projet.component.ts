@@ -45,7 +45,6 @@ export class ProjetComponent implements OnInit {
 ngOnInit(): void {
     
     console.table(this.mesProjets)
-    
 }
 
   afficherDetails(projet: Projet) {
@@ -53,7 +52,6 @@ ngOnInit(): void {
     if(this.indexOuvert!=-1){
       this.mesProjets[this.indexOuvert].detailsVisible=false
     }
-
     this.indexOuvert=projet.id
     projet.detailsVisible = true;
     console.log(projet.id+"-id-")
@@ -61,13 +59,10 @@ ngOnInit(): void {
 
   fermerDetails(projet: Projet) {
     this.tremble = false;
-
+    this.mesProjets[this.indexOuvert].detailsVisible=false
     const scrollProjet=document.getElementById('projet')
     if(scrollProjet)
     scrollProjet.scrollIntoView({ behavior: 'smooth' });
-    for(let i=1;this.mesProjets.length;i++){
-      this.mesProjets[i].detailsVisible=false
-    }
   }
   //Visuel des 2 prochains projet
   showNextProjets() {
