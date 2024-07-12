@@ -21,7 +21,7 @@
                         </div>
                     </div>  
                   
-                    <div class="details-projet" [@fadeInOut]="projet.detailsVisible ? 'in' : 'out'" *ngIf="projet.detailsVisible">
+                    <div class="details-projet"  *ngIf="projet.detailsVisible" [@fadeInOut]="projet.detailsVisible ? 'in' : 'out'">
                    
                         <h3>{{ projet.titre}}</h3>
                         <p class="orange">Technologie(s) utilisée(s) </p>
@@ -30,7 +30,6 @@
                         <p class="data-projet">{{projet.description}}</p>
                         <p class="orange" *ngIf="projet.lien !== ''">{{projet.lien}}</p>
                         <a class="close"  (click)="fermerDetails(projet)"><p (mouseenter)="ajouterTremble()" (mouseleave)="retirerTremble()" [class.tremble]="tremble">FERMER</p></a>
-           
                     </div>
                
                 </div>
