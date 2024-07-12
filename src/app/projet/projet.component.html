@@ -22,20 +22,21 @@
                     </div>                 
                 </div>
         
-                    <div class="details-projet" [@fadeInOut]="projet.detailsVisible ? 'in' : 'out'" *ngIf="projet.detailsVisible">
-                               
-                        <h3>{{ projet.titre}}</h3>
-                        <p class="orange">Technologie(s) utilisée(s) </p>
-                        <p class="data-projet">{{projet.technologie}}</p>
-                        <p class="orange">Description</p> 
-                        <p class="data-projet">{{projet.description}}</p>
-                        <p class="orange" *ngIf="projet.lien !== ''">{{projet.lien}}</p>
-                        <a class="close"  (click)="fermerDetails(projet)"><p (mouseenter)="ajouterTremble()" (mouseleave)="retirerTremble()" [class.tremble]="tremble">FERMER</p></a>
-            
-       
-                </div>
-            </article>
 
+            </article>
+            <div class="details" *ngFor="let projet of mesProjets">
+            <div class="details-projet" [@fadeInOut]="projet.detailsVisible ? 'in' : 'out'" *ngIf="projet.detailsVisible">
+                               
+                <h3>{{ projet.titre}}</h3>
+                <p class="orange">Technologie(s) utilisée(s) </p>
+                <p class="data-projet">{{projet.technologie}}</p>
+                <p class="orange">Description</p> 
+                <p class="data-projet">{{projet.description}}</p>
+                <p class="orange" *ngIf="projet.lien !== ''">{{projet.lien}}</p>
+                <a class="close"  (click)="fermerDetails(projet)"><p (mouseenter)="ajouterTremble()" (mouseleave)="retirerTremble()" [class.tremble]="tremble">FERMER</p></a>
+    
+            </div>
+        </div>
         </div>
 
     </section>
