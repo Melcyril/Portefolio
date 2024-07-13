@@ -50,26 +50,28 @@ ngOnInit(): void {
   afficherDetails(projet: Projet) {
 
     this.indexOuvert=projet.id
-    projet.detailsVisible=false
     for(let i=0;i<this.mesProjets.length;i++){
-      this.mesProjets[i].detailsVisible=false
+
       if(i==this.indexOuvert){
 
         this.mesProjets[i].detailsVisible=true
+      }else{
+        this.mesProjets[i].detailsVisible=false
       }
     }
 
     console.log(projet.id+"-id-")
+    
   }
 
   fermerDetails(projet: Projet) {
     this.tremble = false;
-    const suppDiv=this.el.nativeElement.querySelector('.details-projet')
-    this.renderer2.removeChild(this.el.nativeElement,suppDiv);
+
     for( let i=0;i<this.mesProjets.length;i++){
       this.mesProjets[i].detailsVisible=false
     }
-  
+    const suppDiv=this.el.nativeElement.querySelector('.details-projet')
+    this.renderer2.removeChild(this.el.nativeElement,suppDiv);
     //projet.detailsVisible = false;
     const scrollProjet=document.getElementById('projet')
     if(scrollProjet)
