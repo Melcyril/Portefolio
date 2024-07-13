@@ -14,10 +14,15 @@ import { trigger, state, style, animate, transition, group, query } from '@angul
       state('void', style({
         display:'none'
       })),
-      state('*', style({
-display:'block'
+      state('void', style({
+        display:'block',
+        opacity: 0
       })),
-      transition('void <=> *', animate(100)),
+      state('*', style({
+        display:'block',
+        opacity: 1
+      })),
+      transition('void <=> *', animate(800)),
     ]),
   ]
 })
