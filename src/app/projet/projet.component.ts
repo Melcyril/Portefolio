@@ -12,14 +12,12 @@ import { trigger, state, style, animate, transition, group, query } from '@angul
   animations: [
     trigger('fadeInOut', [
       state('void', style({
-        visibilty:'hidden',
-        opacity: 0
+        display:'none'
       })),
       state('*', style({
-       visibility:'visible',
-        opacity: 1
+display:'block'
       })),
-      transition('void <=> *', animate(800)),
+      transition('void <=> *', animate(100)),
     ]),
   ]
 })

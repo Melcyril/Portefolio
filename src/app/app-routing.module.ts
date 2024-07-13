@@ -4,7 +4,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 
-const routes: Routes = [  { path: '', redirectTo: '/accueil', pathMatch: 'full' },
+const routes: Routes = [  { path: '', redirectTo: '/', pathMatch: 'full' },
 {path: 'accueil', component: AccueilComponent },
 {path:'competences',component:SkillsComponent},
 ];
