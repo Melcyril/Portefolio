@@ -734,6 +734,9 @@ input:-webkit-autofill:active  {
 }
 /*--------------------------------------------MOBILE---------------------------------------------*/
 @media screen and (max-width: 600px) {
+    .container{
+        overflow: hidden;
+    }
     /*Règles de style pour les mobiles ici */
     .gestion{
         visibility: hidden;
