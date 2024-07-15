@@ -736,6 +736,10 @@ input:-webkit-autofill:active  {
 @media screen and (max-width: 600px) {
     .container{
         overflow: hidden;
+    
+    }
+    .container:hover{
+
         overflow-y: auto;
     }
     /*Règles de style pour les mobiles ici */
