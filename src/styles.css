@@ -184,7 +184,8 @@ ul{
         width: 100%;
         border: none;
         border-top: 1px solid rgb(70, 11, 148); /* Style de la ligne */
-        z-index: 0;
+        z-index: 60;
+        visibility: hidden;
       }
 /*---------------------------------------Placements LIGNES------------------------------------------*/
       #about{
@@ -586,7 +587,7 @@ h2{
     width: 60px; /* Largeur du switch */
     height: 34px; /* Hauteur du switch */
     margin-top: 92vh;
-    margin-left: 46.5%;
+    margin-left: 47.9%;
   }
   input,textarea{
     background-color: rgba(255, 255, 255, 0.103) !important;
