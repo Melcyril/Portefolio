@@ -738,12 +738,12 @@ input:-webkit-autofill:active  {
         visibility: hidden;
 
     }
-/*--------------------------------------------BOUTON Toggle-menu----------------------------------*/
+/*--------------------------------------------MOBILE-BOUTON Toggle-menu----------------------------------*/
     .menu-button {
         left:4%;
         top:2%;
     }
-/*--------------------------------------------Presentation MOBILE-----------------------------------*/
+/*-------------------------------------------- MOBILE-Presentation ----------------------------------*/
     .nom,.prenom,.dev{
         display: none;
     }
@@ -763,7 +763,7 @@ input:-webkit-autofill:active  {
     .dev{
         margin-top: 2%;
     }
-/*--------------------------------------------MENU MOBILE---------------------------------------------*/
+/*--------------------------------------------MOBILE-MENU---------------------------------------------*/
     .animation{
         margin-top: 33%;
     }
@@ -782,7 +782,7 @@ input:-webkit-autofill:active  {
         padding-bottom: 3%;
     }
 
-/*------------------------------------design bouton toggle MOBILE-----------------------------------*/
+/*------------------------------------MOBILE design bouton toggle -----------------------------------*/
     .menu-button {
         visibility: inherit;
         margin-top: 2%;
@@ -833,7 +833,7 @@ input:-webkit-autofill:active  {
     width: 100%;
 }
 .switch{
-    margin-top: 105vh;
+    margin-top: 110vh;
 }
       .monprojet{
         border-radius: 20px;
