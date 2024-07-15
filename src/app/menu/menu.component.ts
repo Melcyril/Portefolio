@@ -10,7 +10,7 @@ import { GlobalService } from '../global.service';
   styles: [
   ]
 })
-export class MenuComponent{
+export class MenuComponent implements OnInit{
   constructor(private el: ElementRef, private renderer: Renderer2,private globalService: GlobalService) {}
   monNom:string="Melin"
   monPrenom:string="Cyril"
@@ -18,6 +18,11 @@ export class MenuComponent{
   private prevY = 0;
   activeLink: string = '';
   showMenu:boolean = false;
+  ngOnInit(): void {
+    if(this.showMenu = window.innerWidth < 600){
+      this.showMenu=this.showMenu!
+    }
+  }
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e: MouseEvent) {
     const deltaX = e.pageX - this.prevX;

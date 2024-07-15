@@ -770,7 +770,7 @@ input:-webkit-autofill:active  {
     .navbar{
       padding: 0;
       text-align: center;
-      display: flex;
+      display: none;
       flex-direction: column;
       top:7%;
       opacity: 1;
