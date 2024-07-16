@@ -7,7 +7,7 @@
         </div>
         <div class="mesprojets">
             <article class="monprojet" *ngFor="let projet of mesProjets">
-                <div class="projetOpacity"  *ngIf="projet.id >= startIndex && projet.id < startIndex + 2" [style.opacity]="opacityProjet">
+                <div class="projetOpacity"  *ngIf="projet.id >= startIndex && projet.id < startIndex + 1" [style.opacity]="opacityProjet">
                     <h5>Projet {{projet.id+1}}</h5>
                     <div class="image-container">
                         <p>

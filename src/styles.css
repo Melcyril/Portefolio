@@ -267,12 +267,13 @@ overflow: hidden;
 .about{
     top:60vh;
     width: 75%;
+
 }
 
 .about p{
     padding-left: 10%;
     padding-right: 10%;
-    font-size: larger;
+    font-size: 1rem;
     font-style: italic;
     color: #b8b8b8;
 }
@@ -348,17 +349,13 @@ overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
 
 }
-.mesprojets,.fullstack{
+.fullstack{
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
 }
-.monprojet{
-    flex-basis: 40%; /* Ajustez la largeur des colonnes selon vos besoins */
-}
-.details{
-    flex-basis: 40%;
-}
+
+
 .projetOpacity{
     transition: opacity 0.5s ease; 
 }
@@ -381,7 +378,6 @@ h4{
     width: 49.5%;
     transition: transform 0.3s ease; 
     text-shadow: 3px 2px 1px #800000;
-    font-size: smaller;
 }
 .image-container:hover h4 {
     transform: scale(1.15); /* Zoom de 20% au survol */
@@ -434,8 +430,8 @@ h4{
     z-index: 2000;
 }
 .data-projet{
-    margin: 3% 0 3% 0;
-    width: 100%;
+    margin: 3% 15% 3% 15%;
+    width: 70%;
     padding: 0 3px 0 3px;
     line-height: 150%;
     text-shadow: 2px 2px 2px #CE5937;
@@ -479,7 +475,7 @@ h3{
     text-shadow: 3px 2px 1px #800000;
 }
 .orange{
-    color:rgb(206, 198, 127);
+    color:rgb(244, 255, 246);
     font-weight: bold;
     text-transform: uppercase;
     background-color: #9b0000;
@@ -487,8 +483,8 @@ h3{
     width: 70%;
     margin: 0 15% 0 15%;
     padding: 4px 4px 4px 4px;
-    border-radius: 2px;
-    opacity: 0.8;
+    border-radius: 7px;
+    opacity: 1;
 }
 .vert{
     background-color: rgba(56, 121, 54, 0.5);
@@ -504,10 +500,10 @@ h3{
 padding: 0;
 }
 .articleInteret p{
-    color:rgba(255, 128, 0, 0.61);
     font-weight: bold;
     /*padding: 1% 0 1% 0;*/
     letter-spacing: 2px;
+    text-shadow: 3px 2px 1px #800000;
 }
 .animation-caractere{
     position: absolute;
@@ -554,6 +550,7 @@ padding: 0;
 h2{
     text-shadow: 5px 4px 3px black;
     font-style: italic;
+    color: whitesmoke;
     background-color: rgba(56, 121, 54, 0.5);
     font-family:cursive;
 }
@@ -885,10 +882,22 @@ input:-webkit-autofill:active  {
         width: 100%;
         margin: 0;
       }
+
   }
   @media screen and (max-width: 390px){
     .about{
         font-size: smaller;
+    }
+    .espace{
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .switch{
+        margin-left: 43%;
+        margin-top: 97vh;
+    }
+    h3{
+        font-size: 1rem;
     }
   }
   @media screen and (max-height: 500px) and (max-width: 1000px) {

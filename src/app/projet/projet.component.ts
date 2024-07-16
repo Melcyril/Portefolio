@@ -90,7 +90,7 @@ ngOnInit(): void {
     setTimeout(() => {
       this.opacityProjet  = 1; // Met à jour l'opacité après 0,5 seconde
     }, 250);
-    this.startIndex += 2;
+    this.startIndex += 1;
   }
   //Visuel des 2 prochains avant
   showPreviousProjets() {
@@ -103,7 +103,7 @@ ngOnInit(): void {
     setTimeout(() => {
       this.opacityProjet  = 1; // Met à jour l'opacité après 0,5 seconde
     }, 250);
-    this.startIndex -= 2;
+    this.startIndex -= 1;
   }
   selectProjet(projet: Projet){
     console.log(`click sur le projet -> ${projet.titre}`)
