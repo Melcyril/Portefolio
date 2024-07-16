@@ -79,9 +79,9 @@ ul{
 
 /*--------------------------------------------Container---------------------------------------------*/
 .container{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(33, 21, 21);
     max-width: 100%;
-    overflow: hidden;
+overflow: hidden;
     position: relative;
     height: 100vh; /* Hauteur de 100vh */
     overflow-y: scroll; /* Ajoute une barre de défilement verticale si nécessaire */
@@ -336,6 +336,7 @@ ul{
     padding-bottom: 10px;
     font-style: italic;
     letter-spacing: 2px;
+    text-shadow: 3px 2px 1px #800000;
 }
 .skills {
     top: 200vh;
@@ -373,12 +374,14 @@ ul{
     transform: scale(1.15); /* Zoom de 20% au survol */
 }
 h4{
-    background-color: rgba(206, 106, 6, 0.5);
-    padding: 2px 2px 2px 2px;
-    margin-left: 25%;
+    background-color: rgba(206, 51, 6, 0.7);
+    padding: 7px 2px 7px 2px;
+    margin-left: 24.6%;
     margin-top: 10%;
-    width: 50%;
+    width: 49.5%;
     transition: transform 0.3s ease; 
+    text-shadow: 3px 2px 1px #800000;
+    font-size: smaller;
 }
 .image-container:hover h4 {
     transform: scale(1.15); /* Zoom de 20% au survol */
@@ -473,16 +476,22 @@ h3{
     border: 2px solid #800000;
     margin-bottom: 25px;
     margin-top: 25px;
+    text-shadow: 3px 2px 1px #800000;
 }
 .orange{
-    color:rgba(206, 106, 6, 0.548);
+    color:rgb(206, 198, 127);
     font-weight: bold;
     text-transform: uppercase;
-    background-color: #c9c97b;
+    background-color: #9b0000;
+    text-shadow: 3px 2px 1px #070707;
     width: 70%;
     margin: 0 15% 0 15%;
-    padding-bottom: 4px 0 4px 0;
+    padding: 4px 4px 4px 4px;
     border-radius: 2px;
+    opacity: 0.8;
+}
+.vert{
+    background-color: rgba(56, 121, 54, 0.5);
 }
 .next{
     margin-left: 93%;
@@ -495,7 +504,7 @@ h3{
 padding: 0;
 }
 .articleInteret p{
-    color:rgba(245, 245, 245, 0.719);
+    color:rgba(255, 128, 0, 0.61);
     font-weight: bold;
     /*padding: 1% 0 1% 0;*/
     letter-spacing: 2px;
@@ -543,8 +552,8 @@ padding: 0;
     background-color:rgba(206, 106, 6, 0.158);
 }
 h2{
+    text-shadow: 5px 4px 3px black;
     font-style: italic;
-    color: whitesmoke;
     background-color: rgba(56, 121, 54, 0.5);
     font-family:cursive;
 }
@@ -734,14 +743,7 @@ input:-webkit-autofill:active  {
 }
 /*--------------------------------------------MOBILE---------------------------------------------*/
 @media screen and (max-width: 600px) {
-    .container{
-        overflow: hidden;
-    
-    }
-    .container:hover{
 
-        overflow-y: auto;
-    }
     /*Règles de style pour les mobiles ici */
     .gestion{
         visibility: hidden;
